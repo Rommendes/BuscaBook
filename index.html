@@ -21,79 +21,68 @@
     <link rel="stylesheet" href="reset.css" />
   </head>
   <body>
-    <header class="cabecalho">
+    <header class="cabeçalho">
       <div class="container">
-        <!-- MENU -->
-        <input type="checkbox" id="menu" class="container__botão" />
-        <label for="menu">
-          <span class="cabecalho__menu-hamburguer container__imagem"> </span>
-        </label>
-        <ul class="lista-menu">
-          <li class="lista-menu__titulo">Categorias</li>
-          <li class="lista-menu__item">
-            <a href="#" class="lista-menu__link">Programação</a>
-          </li>
-          <li class="lista-menu__item">
-            <a href="#" class="lista-menu__link">Front-end</a>
-          </li>
-          <li class="lista-menu__item">
-            <a href="#" class="lista-menu__link">Infraestrutura</a>
-          </li>
-          <li class="lista-menu__item">
-            <a href="#" class="lista-menu__link">Business</a>
-          </li>
-          <li class="lista-menu__item">
-            <a href="#" class="lista-menu__link">Design & UX</a>
-          </li>
-        </ul>
-
-        <img
-          src="imagens/Logo.svg" alt="logo da Alura" class="container__imagem"
-        />
-
-        <!-- media screen -->
-        <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
+          <input type="checkbox" id="menu" class="container__botao">
+          <label for="menu">
+              <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+          </label>
+          <ul class="lista-menu">
+              <li class="lista-menu__titulo">Categorias</li>
+              <li class="lista-menu__item">
+                  <a href="#" class="lista-menu__link">Programação</a>
+              </li>
+              <li class="lista-menu__item">
+                  <a href="#" class="lista-menu__link">Front-end</a>
+              </li>
+              <li class="lista-menu__item">
+                  <a href="#" class="lista-menu__link">Infraestrutura</a>
+              </li>
+              <li class="lista-menu__item">
+                  <a href="#" class="lista-menu__link">Business</a>
+              </li>
+              <li class="lista-menu__item">
+                  <a href="#" class="lista-menu__link">Design & UX</a>
+              </li>
+          </ul>
+          <img src="/imagens/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+          <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
       </div>
-        
-          <ul class="opções">
-            <input type="checkbox" id="opções-menu" 
-            class="opções__botão">
 
-            <label for="opções__botão"> 
+      <ul class="opções">
+          <input type="checkbox" id="opções-menu" class="opções__botão">
+          <label for="opções-menu">
               <li class="opções__item">Categorias</li>
-            </label>
+          </label>
 
-            <ul class="lista-menu">
+          <ul class="lista-menu">
               <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">Programação</a>
+                  <a href="#" class="lista-menu__link">Programação</a>
               </li>
               <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">Front-end</a>
+                  <a href="#" class="lista-menu__link">Front-end</a>
               </li>
               <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">Infraestrutura</a>
+                  <a href="#" class="lista-menu__link">Infraestrutura</a>
               </li>
               <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">Business</a>
+                  <a href="#" class="lista-menu__link">Business</a>
               </li>
               <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">Design & UX</a>
+                  <a href="#" class="lista-menu__link">Design & UX</a>
               </li>
-            </ul>
-            
-            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
-            <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
-        </ul>
-        
-       
+          </ul>
+
+          <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+          <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+      </ul>
+
       <div class="container">
-        <a href="#"><img src="imagens/Favoritos.svg"alt="Meus favoritos" class="container__imagem container__imagem-transparente"
-        /></a>
-        <a href="#"><img src="imagens/Compras.svg" alt="Minhas Compras" class="container__imagem container__imagem-transparente"/></a>
-        <a href="#"><img src="imagens/Usuario.svg"alt="Meu perfil" class="container__imagem container__imagem-transparente" /></a>
+          <a href="#"><img src="imagens/Favoritos.svg" alt="Meus favoritos"class="container__imagem container__imagem-transparente"></a>
+          <a href="#"><img src="imagens/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+          <a href="#"><img src="imagens/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
       </div>
-       <!-- media screen -->
-    </header>
+  </header>
 
 
     <!-- BANNER -->
@@ -122,19 +111,24 @@
 
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"><img src="/img/Acessibilidade.svg" alt="Livro sobre acessibilidade na web" /></div>
-          <div class="swiper-slide"><img src="/img/ApacheKafka.svg"alt="Livro sobre Apache ApacheKafka"/></div>
-          <div class="swiper-slide"><imgsrc="/img/Portugol.svg" alt="Livro sobre lógica da programação "/></div>
-          <div class="swiper-slide"><img src="/img/Angular.svg"alt="Livro sobre Angular 11 e Firebase "/></div>
-          <div class="swiper-slide"><img src="/img/MEAN.svg" alt="Livro sobre Mean " /> </div>
-          <div class="swiper-slide"><img src="/img/Guia Front-end.svg"alt="Livro sobre práticas Front-end "/></div>
-        </div>
-      
+          <div class="swiper-slide"><img src="/img/Acessibilidade.svg"
+            alt="Livro sobre acessibilidade na web"/></div>
+        <div class="swiper-slide"><img src="/img/ApacheKafka.svg"
+            alt="Livro sobre Apache ApacheKafka"/></div>
+        <div class="swiper-slide"><img src="/img/Portugol.svg"
+            alt="Livro sobre lógica da programação "/></div>
+        <div class="swiper-slide"><img src="/img/Angular.svg"
+            alt="Livro sobre Angular 11 e Firebase "/></div>
+        <div class="swiper-slide"><img src="/img/MEAN.svg" 
+          alt="Livro sobre Mean " /></div>
+        <div class="swiper-slide"><img src="/img/Guia Front-end.svg"
+            alt="Livro sobre práticas Front-end "/></div>
+      </div>
           
       <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-      </div>
+      
       <!-- If we need scrollbar -->
       <!-- AO COLOCAR COMENTADO RETIRA A BARRA DE ROLAGEM EMBAIXO
    <div class="swiper-scrollbar"></div>
@@ -185,29 +179,26 @@
       <h2 class="carrossel__titulo">Mais vendidos</h2>
      
       <!-- Slider main container -->
-      <div class="swiper">
+      <d class="swiper">
         <!-- Additional required wrapper -->
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
 
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"><img
-              src="/img/Acessibilidade.svg"
+          <div class="swiper-slide"><img src="/img/Acessibilidade.svg"
               alt="Livro sobre acessibilidade na web"/></div>
           <div class="swiper-slide"><img src="/img/ApacheKafka.svg"
               alt="Livro sobre Apache ApacheKafka"/></div>
           <div class="swiper-slide"><img src="/img/Portugol.svg"
               alt="Livro sobre lógica da programação "/></div>
-          <div class="swiper-slide">
-            <img src="/img/Angular.svg"
+          <div class="swiper-slide"><img src="/img/Angular.svg"
               alt="Livro sobre Angular 11 e Firebase "/></div>
-          <div class="swiper-slide">
-       src="/img/MEAN.svg" alt="Livro sobre Mean " /></div>
+          <div class="swiper-slide"><img src="/img/MEAN.svg" 
+            alt="Livro sobre Mean " /></div>
           <div class="swiper-slide"><img src="/img/Guia Front-end.svg"
               alt="Livro sobre práticas Front-end "/></div>
-        </div>
-      
+         
 
       <!-- If we need navigation buttons-->
       <div class="swiper-button-prev"></div>
