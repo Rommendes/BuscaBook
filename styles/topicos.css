@@ -32,3 +32,11 @@
     gap: 10px;
 
 }
+@media sreen and(min-width: 1024px){
+    .topicos__titulo{
+        font-size: 24px;
+    } 
+    .topico__link{
+        font-size: 24px;
+    }
+}
