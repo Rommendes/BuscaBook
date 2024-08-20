@@ -124,15 +124,15 @@
         <div class="swiper-slide"><img src="/img/Guia Front-end.svg"
             alt="Livro sobre práticas Front-end "/></div>
       
-          
+        </div>
       <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
       
       <!-- If we need scrollbar -->
       <!-- AO COLOCAR COMENTADO RETIRA A BARRA DE ROLAGEM EMBAIXO
-   <div class="swiper-scrollbar"></div>
-</div> -->
+   <div class="swiper-scrollbar"></div>-->
+
 </div>
 
       <div class="card">
@@ -180,7 +180,7 @@
       <h2 class="carrossel__titulo">Mais vendidos</h2>
      
       <!-- Slider main container -->
-      <d class="swiper">
+      <div class="swiper">
         <!-- Additional required wrapper -->
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -199,7 +199,7 @@
             alt="Livro sobre Mean " /></div>
           <div class="swiper-slide"><img src="/img/Guia Front-end.svg"
               alt="Livro sobre práticas Front-end "/></div>
-         
+       </div>  
 
       <!-- If we need navigation buttons-->
       <div class="swiper-button-prev"></div>
@@ -288,15 +288,47 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <section class="contato">
+      <div class="contato__descrição">
       <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
       <p class="contato__texto">Atualizações de e-books, novos livros promoções e outros.</p>
+      </div>
       <input type="email" placeholder="seu e-mail " class="contato__email"  >
     </section>
 
 
     <hr/>
-    <footer class="rodape">
-      <h2 class="rodape__titulo">Desenvolvido por Rosangela Mendes</h2>
+    <footer class="rodapé">
+      <h2 class="rodapé__título">Desenvolvido por Rosangela Mendes</h2>
+      <ul class="lista-rodapé">
+          <li class="lista-rodapé__título">Educação</li>
+          <li class="lista-rodapé__item">
+            <img src="/imagens/Caelum.svg" alt="Logo casa do código">
+            <a href="#" class="lista_rodapé"> Caelum</a>
+          </li>
+          <li class="lista-rodapé__item">
+            <img src="/imagens/CasaDoCodigo.svg" alt="Logo casa do código">
+            <a href="#" class="lista_rodapé"> Casa do código</a>
+          </li>
+      </ul>
+      <ul class="lista-rodapé">
+        <li class="lista-rodapé"> Educação Online</li>
+        <li class="lista-rodapé__item">
+          <img src="/imagens/Alura.svg" alt="logo Alura">
+          <a href="#" class="lista_rodapé"> Alura</a>
+        </li>
+        <li class="lista-rodapé__item">
+          <img src="/imagens/AluraEmpresas.svg" alt="logo Alura para empresas ">
+          <a href="#" class="lista_rodapé__link"> Alura para Empresas</a>
+        </li>
+        <li class="lista-rodapé__item">
+          <img src="/imagens/AluraLATAM.svg" alt="Logo Alura Latam">
+          <a href="#" class="lista_rodapé__link"> Alura LATAM</a>
+        </li>
+        <li class="lista-rodapé__item">
+          <img src="/imagens/AluraStart.svg" alt="Logo Alura Start">
+          <a href="#" class="lista_rodapé__link"> Alura Start</a>
+        </li>
+      </ul>
 
     </footer>
     <script>
