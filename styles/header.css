@@ -19,6 +19,8 @@
 .container {
     display: flex;
     align-items: center;
+    font-family: var(--fonte-secundario);
+    
     
 }
 
@@ -70,6 +72,9 @@
     font-size: 16px;
     font-weight: 400; 
 }
+.container__texto{
+    display: block;
+}
 
 @media screen and (min-width: 1024px) {
 
@@ -106,7 +111,9 @@
     .container__imagem-transparente {
         display: none;
     }
-
+    .container__texto{
+        display: block;
+    }
     .cabeçalho__menu-hamburguer {
         display: none;
     }
@@ -121,4 +128,8 @@
     }
 
 }
-
+@media screen and(min-width: 1728px) {
+    .container__texto{
+        display: none;
+    }
+}
