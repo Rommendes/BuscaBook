@@ -7,7 +7,13 @@
     background-position: center;
     display: inline-block;
 }
-
+/* Atenção ao menu */
+.container__botao:checked~ .container__rotulo.cabeçalho__menu-hamburguer{
+    background-image: url("../imagens/Menu\ Aberto.svg");
+}
+.container__botao:checked~.container__rotulo{
+    background: var(--azul-degrade);
+}
 .cabeçalho {
     background-color: var(--branco);
     display: flex;
@@ -26,6 +32,7 @@
 
 .container__imagem {
     padding: 1em;
+
 }
 
 .lista-menu {
@@ -73,9 +80,18 @@
     font-weight: 400; 
 }
 .container__texto{
+    display: none;
+}
+.lista-menu__item:hover{
+    background: var(--azul-degrade);
+}
+.lista-menu__item:hover> .lista-menu__link{
+    -webkit-text-fill-color: var(--branco);
+    text-decoration: none;
+}
+.container__imagem-transparente{
     display: block;
 }
-
 @media screen and (min-width: 1024px) {
 
     .container__titulo,
@@ -111,9 +127,9 @@
     .container__imagem-transparente {
         display: none;
     }
-    .container__texto{
-        display: block;
-    }
+     .container__texto{
+        display: none;
+    } 
     .cabeçalho__menu-hamburguer {
         display: none;
     }
@@ -126,10 +142,42 @@
     .opções__botão {
         display: none;
     }
-
-}
-@media screen and(min-width: 1728px) {
-    .container__texto{
-        display: none;
+    /* usei os combinadores */
+    .opções__botão:checked~ .opções__rotulo> .opções__item{
+        background: var(--azul-degrade);
+        color: var(--branco);
     }
+    .opções__item{
+        padding:  2em 1em;
+    }
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+    .lista-menu__item:hover>.lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+ }   
+@media screen and (min-width: 1728px) {
+    .container__texto{
+        display: block;
+    
+        
+    }
+     .container__link{
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+       
+        color: var(--preto);
+
+     }
+   
+     .cabeçalho{
+        padding: 0 2 em;
+        
+     }
+     .opções{
+        margin-right: auto;
+     }
 }
